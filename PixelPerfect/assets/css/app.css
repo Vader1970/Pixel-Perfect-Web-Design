@@ -1,0 +1,190 @@
+/* Table of Contents */
+/* 1. Splashscreen */
+
+/* ////1. Splashscreen//// */
+/* Apply styles to the splashscreen section */
+.splashscreen {
+  position: relative;
+  height: 100vh; /* Make the section full viewport height */
+  background: #000000; /* Set the background color to black */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Style for the video background */
+.videoBackground {
+  object-fit: cover; /* Cover the entire container */
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Absolute positioning within the .splashscreen */
+  top: 0;
+  left: 0;
+  opacity: 1; /* Fully visible */
+}
+
+/* Apply styles to other videos with lower opacity */
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Render below the text */
+  opacity: 0.3; /* Set lower opacity */
+}
+
+/* Style for the heading text */
+h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%; /* Vertically center the heading */
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #ddd; /* Text color */
+  font-size: 3em; /* Large font size */
+  letter-spacing: 0.2em; /* Adjust letter spacing */
+  z-index: 2; /* Render above the videos */
+}
+
+/* Style individual span elements within the heading */
+h1 span {
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards; /* Apply animation */
+}
+
+/* Keyframes for the animation */
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px); /* Apply blur effect */
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0); /* Remove blur effect */
+  }
+}
+
+/* Keyframes for fading in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply animation delay to each span */
+h1 span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+h1 span:nth-child(2) {
+  animation-delay: 1s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 1.5s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 1.75s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 2s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 2.25s;
+}
+h1 span:nth-child(7) {
+  animation-delay: 2.5s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 2.75s;
+}
+h1 span:nth-child(9) {
+  animation-delay: 3s;
+}
+h1 span:nth-child(10) {
+  animation-delay: 3.25s;
+}
+h1 span:nth-child(11) {
+  animation-delay: 3.5s;
+}
+h1 span:nth-child(12) {
+  animation-delay: 3.75s;
+}
+h1 span:nth-child(13) {
+  animation-delay: 4s;
+}
+
+h1 span:nth-child(14) {
+  animation-delay: 1s;
+}
+
+h1 span:nth-child(15) {
+  animation-delay: 1.5s;
+}
+
+h1 span:nth-child(16) {
+  animation-delay: 1.75s;
+}
+
+h1 span:nth-child(17) {
+  animation-delay: 1.75s;
+}
+
+h1 span:nth-child(18) {
+  animation-delay: 2s;
+}
+
+h1 span:nth-child(19) {
+  animation-delay: 2.25s;
+}
+
+h1 span:nth-child(20) {
+  animation-delay: 2.5s;
+}
+
+h1 span:nth-child(21) {
+  animation-delay: 2.75s;
+}
+
+h1 span:nth-child(22) {
+  animation-delay: 3s;
+}
+
+h1 span:nth-child(23) {
+  animation-delay: 3.25s;
+}
+
+h1 span:nth-child(24) {
+  animation-delay: 3.75s;
+}
+
+h1 span:nth-child(25) {
+  animation-delay: 3.75s;
+}
+
+h1 span:nth-child(26) {
+  animation-delay: 4s;
+}
+
+/* Media query for tablet view */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Adjust the font size for tablet view */
+  }
+}
+
+/* Media query for mobile view */
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.25rem; /* Adjust the font size for mobile view */
+  }
+}
+
+/* ////End of Splashscreen//// */
