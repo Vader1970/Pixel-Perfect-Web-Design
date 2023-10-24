@@ -6,13 +6,14 @@
     <title>Pixel Perfect Web Designs Limited</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/icons/icons-darth-vader24.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   </head>
   <body>
-    <!-- Splashscreen section -->
-    <section class="splashscreen">
+    <!-- Splashscreen header -->
+    <header class="splashscreen">
       <!-- Video background with autoplay, loop, and muted attributes -->
-      <video class="videoBackground" src="./assets/mp4/backgroundFire.mp4" autoplay loop muted></video>
+      <video class="videoBackground" src="./assets/mp4/fireRing.mp4" autoplay loop muted></video>
       <!-- Another video (smoke) with autoplay and muted -->
       <video src="./assets/mp4/smoke.mp4" autoplay muted></video>
       <!-- Heading -->
@@ -45,9 +46,70 @@
         <span>N</span>
         <span>S</span>
       </h1>
-    </section>
+    </header>
+
     <section>
       <p>UNDER CONSTRUCTION</p>
+    </section>
+
+    <!-- //IMAGE SLIDER -->
+    <section class="slider-container">
+      <div class="container">
+        <div id="slide">
+          <!-- Slide One -->
+          <div class="item" style="background-image: url(./assets/images/1.webp)">
+            <div class="content">
+              <div class="name">PORTFOLIO ONE</div>
+              <div class="des">Portfolio description will go here about the site</div>
+              <button>See more</button>
+            </div>
+          </div>
+          <!-- Slide Two -->
+          <div class="item" style="background-image: url(./assets/images/2.webp)">
+            <div class="content">
+              <div class="name">PORTFOLIO TWO</div>
+              <div class="des">Portfolio description will go here about the site</div>
+              <button>See more</button>
+            </div>
+          </div>
+          <!-- Slide Three -->
+          <div class="item" style="background-image: url(./assets/images/3.webp)">
+            <div class="content">
+              <div class="name">PORTFOLIO THREE</div>
+              <div class="des">Portfolio description will go here about the site</div>
+              <button>See more</button>
+            </div>
+          </div>
+          <!-- Slide Four -->
+          <div class="item" style="background-image: url(./assets/images/4.webp)">
+            <div class="content">
+              <div class="name">PORTFOLIO FOUR</div>
+              <div class="des">Portfolio description will go here about the site</div>
+              <button>See more</button>
+            </div>
+          </div>
+          <!-- Slide Five -->
+          <div class="item" style="background-image: url(./assets/images/5.webp)">
+            <div class="content">
+              <div class="name">PORTFOLIO FIVE</div>
+              <div class="des">Portfolio description will go here about the site</div>
+              <button>See more</button>
+            </div>
+          </div>
+          <!-- Slide Six -->
+          <div class="item" style="background-image: url(./assets/images/6.webp)">
+            <div class="content">
+              <div class="name">PORTFOLIO SIX</div>
+              <div class="des">Portfolio description will go here about the site</div>
+              <button>See more</button>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
     </section>
     <script src="./assets/js/scripts.js"></script>
   </body>

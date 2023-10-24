@@ -1,3 +1,4 @@
+/* Existing styles for * and *::after and *::before */
 *,
 *::after,
 *::before {
@@ -6,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/* Existing styles for html and body */
 html,
 body {
   height: 100vh;
